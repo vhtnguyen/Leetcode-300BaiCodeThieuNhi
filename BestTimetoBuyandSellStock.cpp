@@ -3,15 +3,12 @@ using namespace std;
 class Solution {
 public:
     int maxProfit(vector<int>& prices) {
-        int maxProf = 0, low = 0, high = 0;
-        for (int i = 1; i < prices.size();++i){
-            int today = prices[i];
-            if(today<prices[low]){
-                low = i;
-                high = low;
-            }
+        int maxProf = 0, low = 0;
+        int n=prices.size();
+        for (int high = 1; high <n ;++high){
+            if(prices[high]<prices[low])
+                low = high;
             else{
-                high = i;
                 int sellNow = prices[high] - prices[low];
                 if (sellNow> maxProf)
                     maxProf = sellNow;
