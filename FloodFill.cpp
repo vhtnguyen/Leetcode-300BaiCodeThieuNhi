@@ -10,6 +10,7 @@ struct cell {
     bool isValid(int r, int c,int m,int n) {
     return r >= 0 && c >= 0 && r < m && c < n;
     }    
+    //BFS non-recursive solution
     vector<vector<int>> floodFill(vector<vector<int>>& img, int sr, int sc, int color) {
         int oldCol = img[sr][sc];
         if(oldCol!=color){
