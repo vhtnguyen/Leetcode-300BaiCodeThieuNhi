@@ -2,6 +2,7 @@
   "files.associations": {
     "unordered_map": "cpp",
     "vector": "cpp",
-    "algorithm": "cpp"
+    "algorithm": "cpp",
+    "queue": "cpp"
   }
 }
