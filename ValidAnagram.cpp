@@ -2,17 +2,18 @@
 using namespace std;
 class Solution {
 public:
-    int fre[1000];
+    int freq[1000];
     bool isAnagram(string s, string t) {
-        if(s.length()!=t.length())
+        int n=s.length();
+        if(n!=t.length())
             return false;
-        for(auto c:s)
-            fre[c]++;
-        for(auto c:t){
-            fre[c]--;
-            if(fre[c]<0)
-                return false;
+        for(int i=0;i<n;++i){
+            freq[s[i]]++;
+            freq[t[i]]--;
         }
+        for(int i='a';i<='z';++i)
+            if(freq[i]<0)
+                return false;
         return true;
     }
 };

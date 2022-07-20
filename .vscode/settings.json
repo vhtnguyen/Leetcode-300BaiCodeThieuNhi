@@ -5,6 +5,12 @@
     "algorithm": "cpp",
     "queue": "cpp",
     "stack": "cpp",
-    "utility": "cpp"
+    "utility": "cpp",
+    "istream": "cpp",
+    "streambuf": "cpp",
+    "xlocale": "cpp",
+    "xstring": "cpp",
+    "ostream": "cpp",
+    "xutility": "cpp"
   }
 }
