@@ -29,25 +29,44 @@ public:
     }
   };
 
-  //recursive solution
+  
+//recursive solution
 
+  
 // class Solution {
 // public:
 //     ListNode* reverseList(ListNode* head) {
 //         if (!head || !head->next)
 //             return head;
-//         else
-//             head = reverseSubList(head, nullptr);
-//          return head;
-
-//     }
-//     ListNode* reverseSubList(ListNode* current, ListNode* pre) {
-//         ListNode* newHead = current;
-//         if (current&&current->next)
-//             newHead = reverseSubList(current->next, current);
-//         current->next = pre;
+//         ListNode* newHead = reverseList(head->next);
+//         head->next->next=head;
+//         head->next=nullptr;
 //         return newHead;
 //     }
 // };
 
   
+//using stack solution (slow)
+
+  
+// class Solution {
+// public:
+//     ListNode* reverseList(ListNode* head) {
+//         stack<ListNode*>s;
+//         if (head && head->next) {
+//             while (head->next) {
+//                 s.push(head);
+//                 head = head->next;
+//             }
+//             ListNode* current = head;
+//             while (!s.empty()) {
+//                 current->next = s.top();
+//                 current = current->next;
+//                 s.pop();
+//             }
+//             current->next = nullptr;
+//         }
+//         return head;
+
+//     }
+// };
