@@ -10,11 +10,11 @@ using namespace std;
 //             freq[c]++;
 //         for(auto f:freq)
 //              res += (f.second/2)*2;  
-//         if (res < s.length())
-//             res++;
-//         return res;
+//          return res+(res<s.length());
 //     }
 // };
+
+//faster solution
 
 class Solution {
     public:
@@ -27,7 +27,7 @@ class Solution {
              res += (freq[i]/2)*2;  
          for (int i = 'a';i <= 'z';++i) 
              res += (freq[i]/2)*2;    
-        return res+(res<s.length());
+        
     }
 };
 
