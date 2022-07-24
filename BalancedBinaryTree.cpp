@@ -36,18 +36,18 @@ using namespace std;
 
       }
     int height(TreeNode *r){
-        if (!r)
+        if (!r||!balanced)
             return 0;
-        else {
-            int lh = height(r->left);
-            if (!balanced)
-                return 0;
-            int rh = height(r->right);
-             if (!balanced)
-                return 0;
-            if (abs(lh - rh) > 1)
-                balanced = false;
-            return 1 + max(lh, rh);
+        int lh = height(r->left);
+        if (!balanced)
+            return 0;
+        int rh = height(r->right);
+        if (!balanced)
+            return 0;
+        if (abs(lh - rh) > 1) {
+            balanced = false;
+            return 0;
         }
+        return 1 + max(lh, rh);
     }
 };
