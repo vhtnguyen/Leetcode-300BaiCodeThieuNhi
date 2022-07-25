@@ -9,7 +9,7 @@ using namespace std;
 //     unordered_map<int, bool>freq;
 //     bool containsDuplicate(vector<int>& nums) {
 //         for (auto i : nums) {
-//             if (freq[i]) // O(N)
+//             if (freq[i]) // O(N) when collision happen
 //                 return true;
 //             freq[i] = true;
 //         }
