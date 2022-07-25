@@ -3,22 +3,22 @@ using namespace std;
 
 //basic solution using hashmap
 
-// class Solution {
-//     map<int, int>dict;
-//     public:
-//     int majorityElement(vector<int>& nums) {
-//         int me, maxTime = 0;
-//         for (auto i : nums) {
-//             int t = ++dict[i];
-//             if (t > maxTime) {
-//                 maxTime = t;
-//                 me = i;
-//             }
+class Solution {
+    unordered_map<int, int>dict; // faster than map
+    public:
+    int majorityElement(vector<int>& nums) {
+        int me, maxFreq = 0;
+        for (auto i : nums) {
+            int t = ++dict[i];
+            if (t > maxFreq) {
+                maxFreq = t;
+                me = i;
+            }
 
-//         }
-//         return me;
-//     }
-// };
+        }
+        return me;
+    }
+};
 
 //solotion using sort alg
 
