@@ -6,7 +6,7 @@ using namespace std;
 
 // class Solution {
 //     public:
-//     unordered_map<int, bool>freq; // faster than map
+//     unordered_map<int, bool>freq; 
 //     bool containsDuplicate(vector<int>& nums) {
 //         for (auto i : nums) {
 //             if (freq[i]) // O(N) when collision happen
