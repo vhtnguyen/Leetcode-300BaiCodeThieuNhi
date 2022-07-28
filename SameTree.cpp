@@ -9,16 +9,16 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+
+
  // class Solution {
- //     public:
- //     bool isSameTree(TreeNode* p, TreeNode* q) {
- //         if (!p && !q)
- //             return true;
- //         else if (!p && q || p && !q || p->val != q->val)
- //             return false;
- //         else if (!isSameTree(p->left, q->left))
- //             return false;
- //         else
- //             return isSameTree(p->right, q->right);
- //     }
- // };
+//     public:
+//     bool isSameTree(TreeNode* p, TreeNode* q) {
+//         if (!(p || q)) // both are null
+//             return true;
+//         else if (!(p && q) || p->val != q->val) //one of them are null or have different value
+//             return false;
+//         else
+//             return isSameTree(p->left, q->left) && isSameTree(p->right, q->right);
+//     }
+// };
