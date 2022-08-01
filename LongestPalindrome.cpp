@@ -21,13 +21,13 @@ class Solution {
     int freq[128];
     int longestPalindrome(string s) {
         int res = 0;
-        for (auto c : s) 
+        for (auto c : s)
             freq[c]++;
-        for (int i = 'A';i <= 'Z';++i) 
-             res += (freq[i]/2)*2;  
-         for (int i = 'a';i <= 'z';++i) 
-             res += (freq[i]/2)*2;    
-        
+        for (int i = 'A';i <= 'Z';++i)
+            res += (freq[i] / 2) * 2;
+        for (int i = 'a';i <= 'z';++i)
+            res += (freq[i] / 2) * 2;
+        return res + (res < s.length());
     }
 };
 
