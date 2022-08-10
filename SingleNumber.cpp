@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-//basic solution sorting
+//basic sorting solution
 
 // class Solution {
 //     public:
