@@ -42,6 +42,7 @@ using namespace std;
 //     }
 // };
 
+
 //two pointer
 //O(n)
 
