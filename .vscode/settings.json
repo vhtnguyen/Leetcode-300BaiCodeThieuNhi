@@ -11,6 +11,11 @@
     "xlocale": "cpp",
     "xstring": "cpp",
     "ostream": "cpp",
-    "xutility": "cpp"
+    "xutility": "cpp",
+    "array": "cpp",
+    "chrono": "cpp",
+    "deque": "cpp",
+    "forward_list": "cpp",
+    "list": "cpp"
   }
 }
