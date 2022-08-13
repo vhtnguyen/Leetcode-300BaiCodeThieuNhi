@@ -16,6 +16,7 @@
     "chrono": "cpp",
     "deque": "cpp",
     "forward_list": "cpp",
-    "list": "cpp"
+    "list": "cpp",
+    "random": "cpp"
   }
 }
