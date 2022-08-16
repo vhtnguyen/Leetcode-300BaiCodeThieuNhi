@@ -17,6 +17,7 @@
     "deque": "cpp",
     "forward_list": "cpp",
     "list": "cpp",
-    "random": "cpp"
+    "random": "cpp",
+    "charconv": "cpp"
   }
 }
