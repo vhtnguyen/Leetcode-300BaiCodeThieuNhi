@@ -2,6 +2,8 @@
 using namespace std;
 
 
+//BFS non-recursive approach
+
 class Solution {
     public:
     int dc[5] = { -1, 0, 1, 0, -1 };
@@ -34,23 +36,3 @@ class Solution {
     }
 };
 
-int main() {
-    vector<vector<int>> v(4);
-    v[0].push_back(0);
-    v[0].push_back(1);
-    v[0].push_back(0);
-
-    v[1].push_back(0);
-    v[1].push_back(1);
-    v[1].push_back(0);
-
-    v[2].push_back(0);
-    v[2].push_back(1);
-    v[2].push_back(0);
-
-    v[3].push_back(0);
-    v[3].push_back(1);
-    v[3].push_back(0);
-    Solution x;
-    x.updateMatrix(v);
-}
