@@ -23,7 +23,7 @@ class Solution {
                 }
             }
         }
-        while (!q.empty()) {
+        while (cnt < org && !q.empty()) {
             int k = q.size();
             bool speard = false;
             for (int i = 0;i < k;++i) {
