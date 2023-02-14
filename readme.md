@@ -180,3 +180,18 @@ int dc[5] = { -1, 0, 1, 0, -1 };;
     }
 
 ```
+
+## Depth-first searcg (DFS)
+
+```cpp
+void dfs(int s){
+    visited[s]=true;
+    for(int i=0;i<graph[s].size();++i){
+        int v=graph[s][i];
+        if(!visited[v]){
+           //do something here
+            dfs(v);
+        }
+    }
+}
+```
