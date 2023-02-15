@@ -111,11 +111,10 @@ int binarySearchLast(const vector<int>& nums, int left, int right, int target) {
 }
 ```
 
-## BFS (breadth-first search)
-
-### Graph with adjacency lists based
+## Breadth-first search (BFS)
 
 ```cpp
+// Graph with adjacency lists based
 void bfs(int s){
     for(int i=0;i<V;++i){
         visited[i]=false;
@@ -139,9 +138,8 @@ void bfs(int s){
 }
 ```
 
-### Graph with matrix/grid based
-
 ```cpp
+// Graph with matrix/grid based
 int dc[5] = { -1, 0, 1, 0, -1 };;
     bool isValid(vector<vector<int>>& grid, int r, int c) {
         return r >= 0 && c >= 0 && r < grid.size() && c < grid[0].size();
@@ -181,9 +179,10 @@ int dc[5] = { -1, 0, 1, 0, -1 };;
 
 ```
 
-## Depth-first searcg (DFS)
+## Depth-first search (DFS)
 
 ```cpp
+//recursive implement
 void dfs(int s){
     visited[s]=true;
     for(int i=0;i<graph[s].size();++i){
