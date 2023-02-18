@@ -60,7 +60,7 @@ class Solution {
         if (!root) {
             return;
         }
-        if (root->left && root->right) {
+        if (!root->left && !root->right) {
             v.push_back(root->val);
             return;
         }
@@ -81,3 +81,34 @@ class Solution {
         return ans;
     }
 };
+
+
+// class Solution {
+//     public:
+//     int answer;
+//     int previous_value;
+//     void solve(TreeNode* root) {
+//         if (!root) {
+//             return;
+//         }
+
+//         solve(root->left);
+//         //if previous value is INT_MAX than just store the 
+//         //root's value and do nothing.
+//         if (previous_value != INT_MAX)
+//             answer = min(root->val - previous_value, answer);
+//         previous_value = root->val;
+
+//         solve(root->right);
+//     }
+
+//     int minDiffInBST(TreeNode* root) {
+//         //initializing the variables
+//         answer = INT_MAX;
+//         previous_value = INT_MAX;
+//         solve(root);
+
+
+//         return answer;
+//     }
+// };
