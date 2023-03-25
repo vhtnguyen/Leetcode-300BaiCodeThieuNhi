@@ -10,7 +10,8 @@ using namespace std;
 2*(7-2)=10
 4(7-4)=12
 7*7-1-4-16=49-21=28 = n*n-(sum(sque))
-
+Total no. of ways to pick 2 nodes from n nodes = nC2 = n*(n-1)/2;
+Here we should not pick 2 nodes from the same component, so we find the number of nodes in each component.
 */
 class Solution {
     public:
